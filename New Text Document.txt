@@ -1,0 +1,504 @@
+Q. What are the different XPATH AXes??
+                >> XPATH Path has a total of 13 different axes
+                1.Child Axes (Syntax: //child::table)
+                2.Parent Axes (Syntax: //input[@id='email']/parent::*)
+                3.Following Axes (Syntax: //input[@id='email']/following::* or //input[@id='email']/following::tr)
+                4.Following Sibling Axes (Syntax: //select[@id='month']/following-sibling::*  or //select[@id='month']/following-sibling::select/)
+                5.Preceding Axes (Syntax: //input[@id='pass']/preceding::tr )
+                6.Preceding Sibling Axes (Syntax: //select[@id='day']/preceding-sibling::select/ OR //select[@id='day']/preceding-sibling::*)
+****************************************************************************************************** 
+                *ancestor        : Selects all ancestors (parent, grandparent, etc.) of the current node
+                *ancestor-or-self: Selects all ancestors (parent,grandparent) of the current node and the current node itself
+                *attribute                 : Selects all attributes of the current node
+                *child             : Selects all children of the current node
+                *descendant      : Selects all descendants (children, grandchildren, etc.) of the current node
+                *descendant /self: Selects all descendants (children,grandchi) of the current node and the current node itself
+                *following       : Selects everything in the document after the closing tag of the current node
+                *following/sibling:Selects all siblings after the current node
+                *namespace           : Selects all namespace nodes of the current node
+                *parent          : Selects the parent of the current node
+                *preceding       : Selects all nodes that appear before the current node in the document, 
+                                                                                                --except ancestors, attribute nodes and namespace nodes
+                *preceding/sibling:         Selects all siblings before the current node.
+                *self               :Selects the current node.  
+
+Q.What is your Framework Folder structure??
+>>src/test/java, config,EmailReport,Final Report, libs,TestData,XMLReports/OR
+                
+Q. Who provides User stories for you.
+>> Product Owner, Scrum Master and Development team.  
+                > product owner in Scrum , is primarily responsible for formulating user stories and organizing them 
+                                -into a product backlog(breakdown the requirements, create task, estimate and distribute them). 
+                > The Scrum Master cleans out problems, important task of the SM is to get rid of all possible
+                                -impediments that might disturb the work of the team.
+                **Scrum calls for four ceremonies that bring structure to each sprint:
+                   > Sprint planning: A team planning meeting that determines what to complete in the coming sprint.
+                   > Daily stand-up: Also known as a daily scrum, a 15-minute mini-meeting for the software team to sync.
+                   > Sprint demo: A sharing meeting where the team shows what they've shipped in that sprint.
+                   > Sprint retrospective: A review of what did and didn't go well with actions to make the next sprint better.
+
+
+Q.How to find Howmany numbers are repeated in a string??
+>>
+                public class FindHowmanylettersarerepeated {
+
+                public static void main(String[] args)
+                {                              
+                                String str= "asdfas asefasfdaw4e";                           
+                                FindHowmanylettersarerepeated dcs = new FindHowmanylettersarerepeated();
+        dcs.findDuplicateChars(str);
+                }
+
+                public void findDuplicateChars(String str){
+        
+        Map<Character, Integer> dupMap = new HashMap<Character, Integer>();
+        char[] chrs = str.toCharArray();
+        for(Character ch:chrs){
+            if(dupMap.containsKey(ch)){
+                dupMap.put(ch, dupMap.get(ch)+1);
+            } else {
+                dupMap.put(ch, 1);
+            }
+        }
+        Set<Character> keys = dupMap.keySet();
+        for(Character ch:keys){
+            if(dupMap.get(ch) > 1){
+                System.out.println(ch+"--->"+dupMap.get(ch));
+            }
+        }
+    }          
+}
+               
+******************************** Syneron 12th April  ********************************
+                Q. How do you find broken links in a webpage.??
+>>
+                public class BrokenLinksinPage {
+                public static void main(String[] args) throws IOException                {
+                                WebDriver driver=new FirefoxDriver();                  
+                                driver.manage().window().maximize();                   
+                                driver.get("http://www.google.co.in/");                
+                                List<WebElement> links=driver.findElements(By.tagName("a"));                
+                                System.out.println("Total links are "+links.size());                              
+                                for(int i=0;i<links.size();i++)
+                                {
+                                                WebElement ele= links.get(i);                                    
+                                                String url=ele.getAttribute("href");                                          
+                                                verifyLinkActive(url);                                      
+                                }
+                }
+                public static void verifyLinkActive(String linkUrl) {
+                                try  {
+                                   URL url = new URL(linkUrl);           
+                                   HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection();           
+                                   httpURLConnect.setConnectTimeout(3000);           
+                                   httpURLConnect.connect();           
+                                   if(httpURLConnect.getResponseCode()==200)           {
+                                                   SOP(linkUrl+" - "+httpURLConnect.getResponseMessage());
+                                                }
+                                  if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND) {
+                                                SOP(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
+                                                }
+                                } catch (Exception e) {
+                                   
+                                }
+                } 
+                }
+                
+*********************************************** VENU MALLA -START ***********************************
+Q. PDF validations
+>> We have to import "ITEXTPDF" jars. 
+
+                PdfReader pdfreader = new PdfReader("C:/Users/vmalla2/Desktop/Mapping.pdf");                                          
+                PdfStamper pdfStamper = new PdfStamper(pdfreader, new FileOutputStream("C:/Users/vmalla2/Desktop/GenericMap.pdf"));
+                AcroFields form = pdfStamper.getAcroFields();
+                String[] checkbox1 = form.getAppearanceStates("BasicLife");
+                form.setField("BasicLife",checkbox1[1]);
+                form.setField("erloc_LINE1_ADR", "gachibwli road");       
+****************************************************VENU MALLA -End *****************************************************************
+               
+
+
+************************************* WELLS FARGO *************************************
+Q. Explain Framework??
+>>
+
+Q. Have created batch file in Jenkins
+>>
+
+Q.What are the techniques you used  estimations??
+>>
+
+************************************GSPANN Technology Friday 21st APRIL ****************************
+Q. Without implementing absmethods how to use rest of the cocnrete methods.??
+>>
+
+Q.What are the coding guidelines/coding standards fallow?
+>>
+                *Easy to understand the code.
+                *Easy to debug the code.
+                *Beginning comment before method.
+                *Framework Code Header Comments /** asdfasdf */
+                *Block Comments /*  sdfsd */
+                *Static variable should come first and follwowd by other               
+                                >public static int staticint=0;
+                                >public int demoint= 3;
+                                >protected int proint= 4;
+                                >private int priint=5;
+                *After variable declaration, Constructor should be declared.
+                *Inside class, method should be in functional order.         
+                *For readability we should wrap line of code if they are going beyond 80 characters
+                                >Some thumb rules for wrapping lines Break after a comma.
+                                > functionName(firstParameter. secondParameter,
+                                thirdParameter,fourthParameter);
+                *Naming Variables          
+                                >Variable names should be defined with data type abbreviation followed by actual variable name
+                                                (English descriptors that accurately describe the variable/field/class/interface)                                   
+            ^int intCount
+            ^String strMethodName
+            ^float ftvariableName
+            ^decimal decVariableName
+            ^object objObjectName
+                
+                
+Q. How JVM works internally?? Internal architecture of JVM.??   
+>>           
+
+Q.Waht is Collection ?
+>>
+
+Q.Waht is MAP interface and can we add duplicate key values in MAP. If not Waht is the error??
+>>
+
+
+Q.
+>>           
+************************************************** PYRAMID IT Solutions *****************************************************
+Q. In TEst NG how do you run only selected TC's
+
+Q. What are the different waits in WebDriver??
+
+Q. Why can't we use implicit wait.?? How it will impact performance of the script??
+
+Q. Read value in a webtable??
+
+Q. Limitations of Sikuli and AutoIt??
+
+Q. Difference between driver.Quit and Driver.Close??
+
+
+Q. String str = "I am Ram" print in reverese order "ram am i"??
+
+Q. What are the capbilities in andriod??
+
+Q. What is Package Name and Activity in appium?? 
+
+Q. Print in like below
+
+1
+2
+333
+4
+55555    
+
+************************************************** PYRAMID IT Solutions -END *****************************************************             
+                
+INC_Q.Diffrent Types of waits ?? How do you wait until a element exist?? 
+>>
+                *ImplicitlyWait : implicit waits will be in place for the entire time the browser is open. 
+                                                                                i.e. any search for elements on the page could take the time the implicit wait is set for.
+                                Sysntax = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                                
+                *FluentWait :Each FluentWait instance defines the maximum amount of time to wait for a condition, 
+                                                                 as well as the frequency with which to check the condition          
+                                >ExpectedConditions:Models a condition that might reasonably be expected to eventually evaluate to something that is neither null nor false                   
+                                 WebDriverWait wait = new WebDriverWait(driver, 10);
+                                WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(>someid>)));
+                                
+                                 driver.manage().timeouts().pageLoadTimeout(100, SECONDS); //PageLoadTimeout Command
+
+INC_Q.How to get the data from a web table and what are the ways in java.
+Ans: Tr/Td. Absolute xpath, 
+
+
+Q: In how many ways we can perfrom parellel testing.
+
+Q. in a table how to find a "text" in easy way??
+
+Q. How do you wait until a objet load/ajax objects??
+
+Q. How to perform ScrollDown operation??
+
+Q. What is the unique way of identifying object??
+
+Q. Why we use Xpath than CSS??
+
+Q. What are the different waits in WebDriver??
+
+Q.How do you handle alerts??
+
+Q.java 8 new features??
+
+Q.what is hash map
+
+Q. What is CSS??
+
+Q. What are the different API’s in Selenium??
+
+Q. In Head Less browser and how to do debugging??
+
+****************** Etouch Ssytems 13MAY  ******************
+
+
+
+Q. What are the different XPATH AXes??
+                >> XPATH Path has a total of 13 different axes
+                1.Child Axes (Syntax: //child::table)
+                2.Parent Axes (Syntax: //input[@id='email']/parent::*)
+                3.Following Axes (Syntax: //input[@id='email']/following::* or //input[@id='email']/following::tr)
+                4.Following Sibling Axes (Syntax: //select[@id='month']/following-sibling::*  or //select[@id='month']/following-sibling::select/)
+                5.Preceding Axes (Syntax: //input[@id='pass']/preceding::tr )
+                6.Preceding Sibling Axes (Syntax: //select[@id='day']/preceding-sibling::select/ OR //select[@id='day']/preceding-sibling::*)
+****************************************************************************************************** 
+                *ancestor        : Selects all ancestors (parent, grandparent, etc.) of the current node
+                *ancestor-or-self: Selects all ancestors (parent,grandparent) of the current node and the current node itself
+                *attribute                 : Selects all attributes of the current node
+                *child             : Selects all children of the current node
+                *descendant      : Selects all descendants (children, grandchildren, etc.) of the current node
+                *descendant /self: Selects all descendants (children,grandchi) of the current node and the current node itself
+                *following       : Selects everything in the document after the closing tag of the current node
+                *following/sibling:Selects all siblings after the current node
+                *namespace           : Selects all namespace nodes of the current node
+                *parent          : Selects the parent of the current node
+                *preceding       : Selects all nodes that appear before the current node in the document, 
+                                                                                                --except ancestors, attribute nodes and namespace nodes
+                *preceding/sibling:         Selects all siblings before the current node.
+                *self               :Selects the current node.  
+
+Q.What is your Framework Folder structure??
+>>src/test/java, config,EmailReport,Final Report, libs,TestData,XMLReports/OR
+                
+Q. Who provides User stories for you.
+>> Product Owner, Scrum Master and Development team.  
+                > product owner in Scrum , is primarily responsible for formulating user stories and organizing them 
+                                -into a product backlog(breakdown the requirements, create task, estimate and distribute them). 
+                > The Scrum Master cleans out problems, important task of the SM is to get rid of all possible
+                                -impediments that might disturb the work of the team.
+                **Scrum calls for four ceremonies that bring structure to each sprint:
+                   > Sprint planning: A team planning meeting that determines what to complete in the coming sprint.
+                   > Daily stand-up: Also known as a daily scrum, a 15-minute mini-meeting for the software team to sync.
+                   > Sprint demo: A sharing meeting where the team shows what they've shipped in that sprint.
+                   > Sprint retrospective: A review of what did and didn't go well with actions to make the next sprint better.
+
+
+Q.How to find Howmany numbers are repeated in a string??
+>>
+                public class FindHowmanylettersarerepeated {
+
+                public static void main(String[] args)
+                {                              
+                                String str= "asdfas asefasfdaw4e";                           
+                                FindHowmanylettersarerepeated dcs = new FindHowmanylettersarerepeated();
+        dcs.findDuplicateChars(str);
+                }
+
+                public void findDuplicateChars(String str){
+        
+        Map<Character, Integer> dupMap = new HashMap<Character, Integer>();
+        char[] chrs = str.toCharArray();
+        for(Character ch:chrs){
+            if(dupMap.containsKey(ch)){
+                dupMap.put(ch, dupMap.get(ch)+1);
+            } else {
+                dupMap.put(ch, 1);
+            }
+        }
+        Set<Character> keys = dupMap.keySet();
+        for(Character ch:keys){
+            if(dupMap.get(ch) > 1){
+                System.out.println(ch+"--->"+dupMap.get(ch));
+            }
+        }
+    }          
+}
+               
+******************************** Syneron 12th April  ********************************
+                Q. How do you find broken links in a webpage.??
+>>
+                public class BrokenLinksinPage {
+                public static void main(String[] args) throws IOException                {
+                                WebDriver driver=new FirefoxDriver();                  
+                                driver.manage().window().maximize();                   
+                                driver.get("http://www.google.co.in/");                
+                                List<WebElement> links=driver.findElements(By.tagName("a"));                
+                                System.out.println("Total links are "+links.size());                              
+                                for(int i=0;i<links.size();i++)
+                                {
+                                                WebElement ele= links.get(i);                                    
+                                                String url=ele.getAttribute("href");                                          
+                                                verifyLinkActive(url);                                      
+                                }
+                }
+                public static void verifyLinkActive(String linkUrl) {
+                                try  {
+                                   URL url = new URL(linkUrl);           
+                                   HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection();           
+                                   httpURLConnect.setConnectTimeout(3000);           
+                                   httpURLConnect.connect();           
+                                   if(httpURLConnect.getResponseCode()==200)           {
+                                                   SOP(linkUrl+" - "+httpURLConnect.getResponseMessage());
+                                                }
+                                  if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND) {
+                                                SOP(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
+                                                }
+                                } catch (Exception e) {
+                                   
+                                }
+                } 
+                }
+                
+*********************************************** VENU MALLA -START ***********************************
+Q. PDF validations
+>> We have to import "ITEXTPDF" jars. 
+
+                PdfReader pdfreader = new PdfReader("C:/Users/vmalla2/Desktop/Mapping.pdf");                                          
+                PdfStamper pdfStamper = new PdfStamper(pdfreader, new FileOutputStream("C:/Users/vmalla2/Desktop/GenericMap.pdf"));
+                AcroFields form = pdfStamper.getAcroFields();
+                String[] checkbox1 = form.getAppearanceStates("BasicLife");
+                form.setField("BasicLife",checkbox1[1]);
+                form.setField("erloc_LINE1_ADR", "gachibwli road");       
+****************************************************VENU MALLA -End *****************************************************************
+               
+
+
+************************************* WELLS FARGO *************************************
+Q. Explain Framework??
+>>
+
+Q. Have created batch file in Jenkins
+>>
+
+Q.What are the techniques you used  estimations??
+>>
+
+************************************GSPANN Technology Friday 21st APRIL ****************************
+Q. Without implementing absmethods how to use rest of the cocnrete methods.??
+>>
+
+Q.What are the coding guidelines/coding standards fallow?
+>>
+                *Easy to understand the code.
+                *Easy to debug the code.
+                *Beginning comment before method.
+                *Framework Code Header Comments /** asdfasdf */
+                *Block Comments /*  sdfsd */
+                *Static variable should come first and follwowd by other               
+                                >public static int staticint=0;
+                                >public int demoint= 3;
+                                >protected int proint= 4;
+                                >private int priint=5;
+                *After variable declaration, Constructor should be declared.
+                *Inside class, method should be in functional order.         
+                *For readability we should wrap line of code if they are going beyond 80 characters
+                                >Some thumb rules for wrapping lines Break after a comma.
+                                > functionName(firstParameter. secondParameter,
+                                thirdParameter,fourthParameter);
+                *Naming Variables          
+                                >Variable names should be defined with data type abbreviation followed by actual variable name
+                                                (English descriptors that accurately describe the variable/field/class/interface)                                   
+            ^int intCount
+            ^String strMethodName
+            ^float ftvariableName
+            ^decimal decVariableName
+            ^object objObjectName
+                
+                
+Q. How JVM works internally?? Internal architecture of JVM.??   
+>>           
+
+Q.Waht is Collection ?
+>>
+
+Q.Waht is MAP interface and can we add duplicate key values in MAP. If not Waht is the error??
+>>
+
+
+Q.
+>>           
+************************************************** PYRAMID IT Solutions *****************************************************
+Q. In TEst NG how do you run only selected TC's
+
+Q. What are the different waits in WebDriver??
+
+Q. Why can't we use implicit wait.?? How it will impact performance of the script??
+
+Q. Read value in a webtable??
+
+Q. Limitations of Sikuli and AutoIt??
+
+Q. Difference between driver.Quit and Driver.Close??
+
+
+Q. String str = "I am Ram" print in reverese order "ram am i"??
+
+Q. What are the capbilities in andriod??
+
+Q. What is Package Name and Activity in appium?? 
+
+Q. Print in like below
+
+1
+2
+333
+4
+55555    
+
+************************************************** PYRAMID IT Solutions -END *****************************************************             
+                
+INC_Q.Diffrent Types of waits ?? How do you wait until a element exist?? 
+>>
+                *ImplicitlyWait : implicit waits will be in place for the entire time the browser is open. 
+                                                                                i.e. any search for elements on the page could take the time the implicit wait is set for.
+                                Sysntax = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                                
+                *FluentWait :Each FluentWait instance defines the maximum amount of time to wait for a condition, 
+                                                                 as well as the frequency with which to check the condition          
+                                >ExpectedConditions:Models a condition that might reasonably be expected to eventually evaluate to something that is neither null nor false                   
+                                 WebDriverWait wait = new WebDriverWait(driver, 10);
+                                WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(>someid>)));
+                                
+                                 driver.manage().timeouts().pageLoadTimeout(100, SECONDS); //PageLoadTimeout Command
+
+INC_Q.How to get the data from a web table and what are the ways in java.
+Ans: Tr/Td. Absolute xpath, 
+
+
+Q: In how many ways we can perfrom parellel testing.
+
+Q. in a table how to find a "text" in easy way??
+
+Q. How do you wait until a objet load/ajax objects??
+
+Q. How to perform ScrollDown operation??
+
+Q. What is the unique way of identifying object??
+
+Q. Why we use Xpath than CSS??
+
+Q. What are the different waits in WebDriver??
+
+Q.How do you handle alerts??
+
+Q.java 8 new features??
+
+Q.what is hash map
+
+Q. What is CSS??
+
+Q. What are the different API’s in Selenium??
+
+Q. In Head Less browser and how to do debugging??
+
+****************** Etouch Ssytems 13MAY  ******************
+
+
+

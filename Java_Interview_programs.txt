@@ -1,0 +1,246 @@
+#################################################################################
+1. Count the occurances of letter in a String.
+Int CharCount = 0;
+
+For (i=0; i<Inputstr.length(); i++)
+
+ {
+   if(Inputstr.charAt(i) == 'a'){
+      CharCount++;
+
+      }
+
+ }
+
+S.O.Pln("No of Occurances of Letter a count is:"+CharCount);
+
+************************ OR *********************************************
+
+int CharCount = 0;
+
+for (char ch: input.toCharArray())
+{
+
+  If (ch == 'a')
+  {
+
+    CharCount++;
+
+    }
+}
+S.O.Pln("No of Occurances of Letter a count is:"+CharCount);
+
+###################################################################################
+2. String reverse program.
+
+str = "Hello World"
+
+Public class Reversestring{
+
+Public static void main(String args[]) {
+
+StringBuffer sb = new StringBuffer(Str)
+
+String RevResult = sb.reverse(str).ToString();
+
+System.Out.Println("After reversing the str is :"+RevResult)
+
+ }
+
+}
+
+***************************** OR **********************************************
+
+String reverse using String Builder class
+
+str = "Hello World"
+
+Public class Reversestring{
+
+Public static void main(String args[]) {
+
+StringBuilder sb = new StringBuilder(Str)
+
+Char[] CharArray = str.ToCharArray();
+
+for (i=CharArray.length()-1; i>=0; i--){
+   sb.append(CharArray[i]);
+     
+}
+
+
+System.Out.Println("After reversing the str is :"+sb.ToString());
+
+ }
+
+}
+
+#######################################################################################
+
+Reversing order of words in a String.
+
+Public Class ReverseWords{
+
+Public Static Void Main(String args[])
+
+Public Static String WordsReverse(String line){
+
+StringBuilder sb = new StringBuilder();
+
+String[] str = line.trim().split("\\s");
+
+If (line.trim().isEmpty()){
+
+return line;
+
+}
+
+for (i= str.length()-1; i>=0; i--)
+{
+   sb.append(str[i]);
+   sb.sppend(' ');
+
+}
+
+ return sb.trim().ToString();
+
+
+}
+
+
+
+I am billable through out an year. and i had always completed my tasks on timely manner and i had no escalations and got lot of appreciation emails for my work form the client as well as from management in ONE team.
+I was involved in the Smoke test automation using robotic framework(Python) in One team for the AM teams.
+
+Never missed filling the time sheet.
+
+I am open to take up the DTC work or any other innovation tasks which were planned by testing COE.
+
+And i am approached by training HR for the Video recording for the GItHUb and Kibana to upload it into DXC University which i will be starting soon.
+
+I have done few training in DXC University and also the training which were given by trainers.
+I had completed the Mandatory Training hours as per the regional training norms.
+
+I had given trainings on GitHub and Kibana at organizational level and this i had given twice upon the request from training HR and from few projects.
+
+Received good feedback for the training's which helped the people to use this skill in their currently working projects.
+
+BASS is complex system where we need to put lot of effort to learn this system and i am able to quickly adapt this and able to work on this system independently and within short time that i could give the KT sessions on the BASS system to the newly joined resources.
+
+I have started supporting AM for the production tickets tests on the day1 that i have joined this team with minimal support and got appreciated for the tests that i have done in short time.
+
+
+
+
+I am fully billable through out an year.
+I had always completed my tasks on timely manner and i had no escalations and got lot of appreciation emails for my work form the client as well as from management.
+
+
+
+
+
+
+
+I am fully billable through out an year.
+I had always completed my tasks on timely manner and i had no escalations and got lot of appreciation emails for my work form the client as well as from management.
+I was involved in the Smoke test automation using robotic framework(Python) in One team for the AM teams.
+
+Never missed filling the timesheet.
+
+I am open to take up the DTC work or any other innovation tasks which were planned by testing COE.
+
+And i am approached by training HR for the Video recording for the GItHUb and Kibana to upload it into DXC University which i will be starting soon.
+
+
+
+
+
+
+
+
+I have done few trainings in DXC University and also the trainings which were given by trainers.
+I had completed the Mandatory Training hours as per the regional training norms.
+
+
+
+I had given trainings on GitHub and Kibana at organizational level and this i had given twice upon the request from training HR and from few projects.
+
+
+
+Received good feedback for the trainings which helped the people to use this skill in their currently working projects.
+
+
+
+
+
+
+
+Malleswari worked for ONE team during Mar2018 - Oct2018.
+
+1) She joined the team at a critical phase (beginning of SIT) of the CreditCheck BAPI service development.
+
+2) Played a crucial rule in the delivery of CreditCheck by collaborating effectively with the team and efficiently testing the CreditCheck service and delivering on time with good quality.
+
+3) CreditCheck was a vital component of Rebranding program and so successful delivery of CreditCheck was important to the overall success of the program.
+
+4) She was quick to understand the ONE application.
+
+5) She has a good attitude and was ready to stretch to meet the project timelines.
+
+She is flexible to move to BASS. Bass being very complex system, she is needs to focus more on this application and practice more and also try before seeking help.
+
+Area of improvement would be to learn and implement test automation.
+
+
+
+
+
+NagaMalleswari is working with BASS team from 01Oct18. 
+She has undergone knowledge transfer sessions for BASS application which is one of the critical applications in Telenor account and started taking assignments in BASS. 
+She needs more focus on self learning on various modules in BASS so she is ready and pickup new tasks, also this helps in reducing load on other senior tester.
+
+
+
+Malleswari worked for my team during Mar2018 - Oct2018.
+
+1) She joined the team at a critical phase (beginning of SIT) of the CreditCheck BAPI service development.
+
+2) Played a crucial rule in the delivery of CreditCheck by collaborating effectively with the team and efficiently testing the CreditCheck service and delivering on time with good quality.
+
+3) CreditCheck was a vital component of Rebranding program and so successful delivery of CreditCheck was important to the overall success of the program.
+
+4) She was quick to understand the ONE application.
+
+5) She has a good attitude and was ready to stretch to meet the project timelines.
+
+6) She surely will be an asset with whichever team she works for.
+
+Area of improvement would be to learn and implement test automation
+
+
+Swetha
+Though initially you were not so confident in front of the client, later you have picked up well and it is good that you are handling the client calls independently now.
+It's worth mentioning that you did a grate job in environment refresh and everything went smooth.
+Suggestion is, work towards taking independent decisions ( right decision in the interest of client and DXC ) according to the situation and make sure that work is getting done by hook or crook. Developing this skil will help you in future in your career path.
+Though nothing much you can do towards automation due to various constraints, find a way to add a value to client so as DXC will get credit for that. 
+Overall, you are doing to good.
+Keep going and looking forward to your continued support in the year to come 2019-20.
+Wishing you all the best. [?01/?25/?2019 12:34 PM]  
+bane icchinattele
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,133 @@
+Proficiency in Java and Selenium
+Expertise in testing the apps hosted on cloud for the scalability, availability and performance
+Experience with integration testing around REST calls, APIs calls, micro services (preferably with SoapUI or similar)Good understanding on Project life cycle with Automation architecture
+Self-initiative and passion for quality
+Nice to have:Working knowledge on TFS/VSTS or similar CI-CD tools
+Knowledge on DevOps 
+
+
+
+Practice Agile methodologies in infrastructure development and DevOps activities.
+
+
+Develop automated test scripts and test frameworks
+Experience with Selenium
+Develop reusable test code
+Analyze business requirements
+Participate throughout the design and development process, analyzing features to point out weaknesses or inconsistencies
+Work closely with the development engineers to understand features and establish test strategies, design comprehensive test plans and robust test cases
+Perform functional, exploratory, and acceptance testing
+Identify, diagnose, report, and assist developers in resolving defects and verifying bug fixes
+
+4 years of full time collage degree or US equivalent of it.
+Must have 3-5 years of overall experience in Software Quality Assurance.
+Hands-on experience or exposure to Business Driven Development (BDD)\Test Driven Development (TDD).
+Automation Experience using Protractor\Typescript\Java\node.js\Gherkins\Cucumber
+
+Agile Tool: JIRA\Agile Craft
+DataBase: MongoChef
+Api Testing: Smart Bear Soapui Pro/Swagger
+Devops: Jenkins/Gradle/GIT
+IDE’s: Intellj\VisualStudioCode
+
+
+
+The DevOps Test Engineer will automate as many steps as possible to build the appropriate test mechanism to ensure rapid deployment of code from test to production. 
+
+The DevOps tester will plan for, design, develop, and use test automation frameworks and test scripts in a newly-established agile, DevOps environment. 
+
+Develops automated test scripts to validate functional, technical, and performance requirements. 
+
+Executes test scripts during internal system testing. 
+
+Documents test issues and works with development team to validate/recreate. 
+
+Performs retesting and regression testing. 
+
+Develop and implement program test plans, quality assurance plans, programs, and procedures using the testing tools. 
+
+Oversees tests to ensure that performance and quality products conform to established policy and standards. 
+
+Develops test reports. 
+
+Reviews, analyzes and reports on quality discrepancies related to software and systems engineering. 
+
+Investigates problems and develops disposition and corrective actions for recurring discrepancies. 
+
+Interfaces with all program staff to ensure requirements are met. 
+
+Recommends corrective actions, dispositions and modifications. 
+
+
+
+
+
+
+The ideal candidate is a self-motivated team player with excellent analytical, problem solving, and collaboration skills.
+
+DevOps technologies, methodologies and processes Dockers & containers Orchestration Kubernetes, OpenShift, Docker Swarm, etc. 
+
+
+Automation (CI/CD) Jenkins, microservice environment deployments, artifactories. DevOps deployment tools Ansible, Terraform, Chef, Puppet, Docker Compose Cloud/PaaS Environments (commercial, government & intelligence) 
+
+
+Working knowledge of Amazon Web Services, Microsoft Azure, IBM Bluemix Logging/monitoring tools CloudWatch, DataDog, ElasticSearch, Logstash, Kibana
+
+
+ Scripting/programming languages Ant, Shell, Phython, Java, Go UNIX/Linux administration, troubleshooting, performance tuning, & security
+
+
+Should have experience in Automation Selenium Web driver and Test NG Qualifications Three or more years of relevant experience.
+
+ 3 years of working experience in Product Containerization and DevOps tools & platforms such as Docker, etc.
+
+
+ Strong in scripting languages (Python etc.) along with basic understanding of OO programming (Java). 
+
+Solid understanding of CI best practices and tooling, preferably Jenkins.
+
+Strong experience with version control systems (like Git) and their use in release management, branching, merging, and integration strategies.
+
+Experience in product installation, upgrade and configuration in both Linux and Windows platforms
+
+
+ Strong understanding of systems fundamentals including OS, networking, storage, load balancing, etc. 
+
+Ability to analyze and resolve complex infrastructure resource and application deployment issues.
+
+
+Expertise in working with Agile/SCRUM teams
+
+
+Ability to learn and adapt to new technologies quickly
+
+ How youll Stand Out In this role, youll help support SaaS team to transform the IT industry by Work collaboratively within an Agile Team to write high quality, testable code that meets the Definition of Done Strive to meet team commitments.
+
+
+Strive to eliminate technical debt. 
+
+Adopt a test-first approach to software development, where possible in which the test is developed before the code.
+
+
+Participate in design and code reviews with other engineers.
+
+
+Use best software engineering practices to evolve the system design.
+
+
+Create automated unit, system, and acceptance tests. 
+
+Participate in test plan reviews.
+
+Perform unit/module testing of software.
+
+Continuously evaluate software performance, identify performance degradation and opportunities to gain performance improvements valued by customers.
+
+ Enable Agility Work within a self-directed Agile team;
+
+
+commit to work and own the outcome.
+
+ Demonstrate and cultivate a passion for delivering high quality products aligned with customer needs; increase customer exposure to build empathy.
+
+ Employ continuous learning; build domain expertise and keep abreast on new technology, processes, systems and tools. 

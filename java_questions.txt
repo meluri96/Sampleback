@@ -1,0 +1,133 @@
+JAVA Interview Quetions:
+
+Whar are the advantages of page object model? - Easy Readability, Easy Maintanannce and oops concepts Usage.
+
+How do you read the individual page classes or intitiate them in selenkum? Pagefactory.InitElements(driver, pageclass)
+
+What is the difference between String Buffer and String Builder? - 
+
+Both the variable are stored in the stack but the String Buffer is thread safe and Synchronized, Low Performance where as String Buffer is not thread safe, Non Synchronized and High Performnace.
+
+What is the difference between hashmap and hash set?
+
+What is volatile in Java? - When u declare a variable as a volatalite that means the value of that variable direclty gets from main memory but not from the thread cache.
+
+What is the difference between List and List Iterator?
+
+What is the Syncronization in Java? - When having mutliple threads in a code and executing one at a time, Synchronized we can do that.
+
+Whar are checked and Unchecked exceptions? 
+
+Checked are compile time,  Throwable class, uses throws keyword, Class not found exception
+
+and  Unchecked excepions are Runtime exceptions like Arthamatic exception and Arrayoutofbound exception.
+
+Which Utility is needed for web services Automation? Java.net.HTTPURLConnection
+
+Other than Send Keys what is the other alternative to be used in selenium web driver?: In the Actions class we have Sendkeys methods in that Element and Value to be entered. 
+
+What is the annotation that you use in page object model to identify an object? - FindBy
+
+1. How do you count the broken links on a web page using selenium web driver? - HttpURLConnection
+
+2. How do you initate the web pages which u have created or call in the page object model in selenium? -PageFactory.InitElements(Driver, this)
+
+3. How do you the even row number from emp table in the SQL?  Select E.EMPID, E.Project, E.Salary (Select *, Row_Number() Over(Order By(EmpID)) as Row_Number) From E.Row_Number % 2 = 0
+
+4. How do you read the data from excel spreadsheets in selenium?
+
+5. what is your role as a devops tester?
+
+6. What is Delete, Drop and Trucate in SQL?
+
+7. Hard ans Soft assert in Selenium? SoftAssert in selenum is used to when
+
+Selenium Tool Questins?
+
+1. How do you handle popups in Selenium?
+
+2. What are the navigational commands in Selenium?
+
+3. What are the commands used in SOAP UI?
+
+
+General Testing Questions:
+
+Did you ever do the estimations.
+
+Challenges in coordinating with the team.
+
+1. What is the difference between put and Patch in API Testing?
+
+
+
+Cognizant interview questions:
+
+1. Taking the screen shot in selenium webdriver?
+
+public class Guru99TakeScreenshot {
+
+    @Test
+
+    public void testGuru99TakeScreenShot() throws Exception{
+
+		WebDriver driver ;
+    	System.setProperty("webdriver.firefox.marionette","C:\\geckodriver.exe");
+    	driver = new FirefoxDriver();
+
+        //goto url
+
+        driver.get("http://demo.guru99.com/V4/");
+
+        //Call take screenshot function
+
+        this.takeSnapShot(driver, "c://test.png") ;     
+
+    }
+
+    /**
+
+     * This function will take screenshot
+
+     * @param webdriver
+
+     * @param fileWithPath
+
+     * @throws Exception
+
+     */
+
+    public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+
+        //Convert web driver object to TakeScreenshot
+
+        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+
+        //Call getScreenshotAs method to create image file
+
+                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+            //Move image file to new destination
+
+                File DestFile=new File(fileWithPath);
+
+                //Copy file at destination
+
+                FileUtils.copyFile(SrcFile, DestFile);
+
+    }
+
+}
+
+UFT AUTOMATION TESTING
+
+Independently take up the Automation tasks using UFT/QTP
+Understanding of framework and experience of having designed or implemented automation framework.
+Automation on Web-service Testing - Restful web services , SOAP web services (API Testing)
+Experience on TFS, HP ALM tools
+Experience on Functional, regression testing and End-to-End Integration testing.
+Good knowledge on CI/CD process
+SQL Query writing knowledge is a plus 
+Strong in Communication and Presentation skills 
+Flexible to support in fast paced and dynamic environments
+Participating in Daily Agile Scrum meetings/client status meetings
